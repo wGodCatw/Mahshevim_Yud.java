@@ -28,24 +28,24 @@ public class P4_E1 {
 //        }
 
         //E4
-//        System.out.println("Type in passport number (without hyphen): ");
-//        String passNum = in.next();
-//        int passSum = 0;
-//
-//        char[] numArray = passNum.toCharArray();
-//        for (int i = 0; i < numArray.length; i++) {
-//            if (i % 2 == 0) numArray[i] *= numArray[i] * 2;
-//        }
-//
-//        for (char c : numArray) {
-//            passSum += c;
-//        }
-//        int result = passSum;
-//        while (passSum % 10 != 0) {
-//            passSum++;
-//        }
-//
-//        System.out.println("Your last digit in passport number is: " + (passSum - result));
+        System.out.println("Type in passport number (without hyphen): ");
+        String passNum = in.next();
+        int passSum = 0;
+
+        char[] numArray = passNum.toCharArray();
+        for (int i = 0; i < numArray.length; i++) {
+            if (i % 2 == 0) numArray[i] *= numArray[i] * 2;
+        }
+
+        for (char c : numArray) {
+            passSum += c;
+        }
+        int result = passSum;
+        while (passSum % 10 != 0) {
+            passSum++;
+        }
+
+        System.out.println("Your last digit in passport number is: " + (passSum - result));
 
         //E5
 //        int result;
@@ -147,13 +147,18 @@ public class P4_E1 {
 //        }
 
         //E11
-        int num = 7;
-        int count1 = 1; //spaces
-        int count2 = num - count1; //stars
-        for (int i = 0; i < num; i++) {
-            for (int j = 0; j < count1; j++) {
-
-            }
+//        int num = 7;
+//        int count1 = 0; //spaces
+//        int count2 = num - count1; //stars
+//        for (int i = 0; i < num; i++) {
+//            for (int j = 0; j < count1; j++) {
+//                System.out.print(" ");
+//            }
+//            count1++;
+//            for (int j = 0; j < count2; j++) {
+//                System.out.print("*");
+//            }
+//            count2--;
+//            System.out.println();
         }
     }
-}
