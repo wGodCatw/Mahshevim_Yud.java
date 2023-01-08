@@ -1,20 +1,25 @@
 package Roni.Nodes;
 
 public class Sheela {
-    public static int countNodes(Node head){
+    public static boolean countNodes(Node head) {
         int count = 0;
-        while(head!=null){
+        while (head != null) {
             count++;
             head = head.getNext();
         }
-        return count;
+        return count%2==0;
     }
 
-    public static boolean isEven(Node head){
-        while(head!=null){
-            if(head.getValue()%2!=0) return false;
-            head = head.getNext();
-        }
-        return true;
-    }
+//    public static boolean isEven(Node head) {
+//        while (head != null) {
+//            if (head.getValue() % 2 != 0) return false;
+//            head = head.getNext();
+//        }
+//        return true;
+//    }
+
+//    public static boolean isEvenTwice(Node head) {
+//        if (isEven(head) && countNodes(head)) return true;
+//        return false;
+//    }
 }
